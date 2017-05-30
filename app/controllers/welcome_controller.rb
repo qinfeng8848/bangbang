@@ -6,6 +6,7 @@ class WelcomeController < ApplicationController
     @usdt_eth = Poloniex::Market.by_pair("USDT_ETH").last
     @usdt_etc = Poloniex::Market.by_pair("USDT_ETC").last
     @usdt_sc = Poloniex::Market.by_pair("BTC_SC").last.to_f * Poloniex::Market.by_pair("USDT_BTC").last.to_f
+    @usdt_btc = Poloniex::Market.by_pair("USDT_BTC").last
     # @exchange_rate = Money.default_bank.get_rate('USD','CNY').to_f
 
     client_public = PeatioAPI::Client.new endpoint: 'https://yunbi.com'
@@ -14,5 +15,6 @@ class WelcomeController < ApplicationController
     @etc_yunbi = response["etccny"]["ticker"]["sell"]
     @eth_yunbi = response["ethcny"]["ticker"]["sell"]
     @sc_yunbi = response["sccny"]["ticker"]["sell"]
+    @btc_yunbi = response["btccny"]["ticker"]["sell"]
   end
 end
