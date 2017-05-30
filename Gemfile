@@ -35,6 +35,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass'
+gem "peatio_client"
+gem 'poloniex', :git => "https://github.com/developerby/poloniex.git"
+gem 'google_currency'
+gem "dalli"
+gem "actionpack-action_caching"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
