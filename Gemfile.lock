@@ -114,6 +114,7 @@ GEM
     peatio_client (0.0.7)
       activesupport
       faye-websocket
+    pg (0.19.0)
     public_suffix (2.0.5)
     puma (3.8.2)
     rack (2.0.3)
@@ -206,6 +207,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   peatio_client
+  pg
   poloniex!
   puma (~> 3.0)
   rails (~> 5.0.2)
