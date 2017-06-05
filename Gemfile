@@ -36,10 +36,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass'
 gem "peatio_client"
-gem 'poloniex', :git => "https://github.com/developerby/poloniex.git"
-gem 'google_currency'
-gem "dalli"
-gem "actionpack-action_caching"
+
+gem "poloniex", :git => "https://github.com/developerby/poloniex.git"
+gem "google_currency"
+
+gem "peatio_client"
+gem "json"
+gem "money"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
