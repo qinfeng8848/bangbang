@@ -13,31 +13,31 @@
         <tr>
           <td>zec</td>
           <td><%= @zec_yunbi %></td>
-          <td><%= @usdt_zec %></td>
+          <td><%= @usdt_zec.to_f * @exchange_rate.to_f %></td>
         </tr>
 
         <tr>
           <td>etc</td>
           <td><%= @etc_yunbi %></td>
-          <td><%= @usdt_etc %></td>
+          <td><%= @usdt_etc .to_f * @exchange_rate.to_f %></td>
         </tr>
 
         <tr>
           <td>eth</td>
           <td><%= @eth_yunbi %></td>
-          <td><%= @usdt_eth %></td>
+          <td><%= @usdt_eth .to_f * @exchange_rate.to_f %></td>
         </tr>
 
         <tr>
           <td>sc</td>
           <td><%= @sc_yunbi %></td>
-          <td><%= @usdt_sc %></td>
+          <td><%= @usdt_sc .to_f * @exchange_rate.to_f%></td>
         </tr>
 
         <tr>
           <td>btc</td>
           <td><%= @btc_yunbi %></td>
-          <td><%= @usdt_btc %></td>
+          <td><%= @usdt_btc .to_f * @exchange_rate.to_f %></td>
         </tr>
 
 
