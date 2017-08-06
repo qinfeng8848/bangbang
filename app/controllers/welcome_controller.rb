@@ -16,5 +16,7 @@ class WelcomeController < ApplicationController
     @eth_yunbi = response["ethcny"]["ticker"]["sell"]
     @sc_yunbi = response["sccny"]["ticker"]["sell"]
     @btc_yunbi = response["btccny"]["ticker"]["sell"]
+    @eos_yunbi = response["eoscny"]["ticker"]["sell"]
+
   end
 end
